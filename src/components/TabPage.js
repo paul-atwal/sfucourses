@@ -3,6 +3,7 @@ import Tabs from "react-bootstrap/Tabs";
 import Table from "./Tables";
 import data from "../data.js";
 import { useState } from "react";
+import BarChart from "./BarChart";
 
 function TabPage() {
   const [checkedRows, setCheckedRows] = useState({});
@@ -31,6 +32,7 @@ function TabPage() {
         />
       </Tab>
       <Tab eventKey="selected" title="Selected">
+        <BarChart checkedRows={selectedData.entries} />
         <Table
           data={selectedData}
           checkedRows={checkedRows}

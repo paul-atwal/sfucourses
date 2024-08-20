@@ -1,5 +1,4 @@
 import "./App.css";
-import Table from "./components/Tables";
 import TabPage from "./components/TabPage";
 
 function App() {
