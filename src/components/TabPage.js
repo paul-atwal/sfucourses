@@ -25,6 +25,9 @@ function TabPage() {
       justify
     >
       <Tab eventKey="all" title="All">
+        {selectedData.entries.length > 0 && (
+          <BarChart checkedRows={selectedData.entries} />
+        )}
         <Table
           data={data}
           checkedRows={checkedRows}
@@ -32,7 +35,9 @@ function TabPage() {
         />
       </Tab>
       <Tab eventKey="selected" title="Selected">
-        <BarChart checkedRows={selectedData.entries} />
+        {selectedData.entries.length > 0 && (
+          <BarChart checkedRows={selectedData.entries} />
+        )}
         <Table
           data={selectedData}
           checkedRows={checkedRows}

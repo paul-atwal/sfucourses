@@ -34,10 +34,21 @@ const BarChart = (props) => {
   // function to calculate average
   const getAverage = (attribute, dataArray) => {
     let sum = 0;
+    // track how many valid numbers we've encountered
+    let count = 0;
     for (let i = 0; i < dataArray.length; i++) {
-      sum = sum + parseFloat(dataArray[i][attribute]);
+      const value = parseFloat(dataArray[i][attribute]);
+
+      // if value isn't null, we'll use it for average
+      if (!isNaN(value)) {
+        sum += value;
+        count++;
+      }
+
+      // if we have at least one valid number, return the average.
+      // otherwise return 0
+      return count > 0 ? sum / count : 0;
     }
-    return sum / dataArray.length;
   };
 
   const dataset = [];

@@ -1,5 +1,4 @@
 Function:
-- bar graph attribute break if a course has NA
 - show bar graph on All page if 1+ course selected 
 
 UI:

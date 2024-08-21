@@ -9,10 +9,10 @@ const Tables = ({ data, checkedRows, onCheckChange }) => {
           <th></th>
           <th>CMPT</th>
           <th>Prof</th>
-          <th>Prof Rating</th>
+          {/* <th>Prof Rating</th>
           <th>Prof Difficulty</th>
           <th>Course Difficulty</th>
-          <th>Course Workload</th>
+          <th>Course Workload</th> */}
         </tr>
       </thead>
       <tbody>
