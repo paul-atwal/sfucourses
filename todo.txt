@@ -1,7 +1,7 @@
 Function:
-- show bar graph on All page if 1+ course selected 
 
 UI:
+- show graph and course list side by side? 
 - bar graph colours 
 - change attributes to "Checkbox, Course, Prof" with both Course and Prof colour coded. 
     - hover over course to see Difficulty and Workload ratings 
