@@ -9,6 +9,7 @@ const Feedback = () => {
         data-netlify="true"
       >
         <input type="hidden" name="form-name" value="feedback" />
+
         <textarea
           className="feedback-textarea"
           name="feedback"
