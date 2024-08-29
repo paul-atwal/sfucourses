@@ -2,7 +2,7 @@ import "./App.css";
 import Navbar from "./components/Navbar";
 import CourseEntry from "./components/CourseEntry";
 import data from "./data.js";
-import { useState, useMemo } from "react";
+import { useState } from "react";
 import SummaryCard from "./components/SummaryCard.js";
 import Feedback from "./components/Feedback";
 import {
