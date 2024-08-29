@@ -3,12 +3,12 @@ const Feedback = () => {
     <div className="feedback-container">
       <h2>Feedback</h2>
       <form
-        className="
-        feedback-form"
+        className="feedback-form"
         name="feedback"
         method="POST"
-        netlify
+        data-netlify="true"
       >
+        <input type="hidden" name="form-name" value="feedback" />
         <textarea
           className="feedback-textarea"
           name="feedback"
