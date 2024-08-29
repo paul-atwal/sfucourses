@@ -1,5 +1,4 @@
 import React from "react";
-import "./CourseEntry.css";
 import { FaStar, FaSmile, FaMeh, FaFrown } from "react-icons/fa";
 
 const CourseEntry = ({
