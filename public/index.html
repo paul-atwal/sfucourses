@@ -30,6 +30,23 @@
     />
   </head>
   <body>
+    <form
+      className="feedback-form"
+      name="feedback"
+      method="POST"
+      data-netlify="true"
+      netlify-honeypot="bot-field"
+      hidden
+    >
+      <input type="hidden" name="form-name" value="feedback" />
+
+      <textarea
+        className="feedback-textarea"
+        name="feedback"
+        placeholder="Write your feedback here..."
+      ></textarea>
+      <button className="submit-feedback" type="submit">Submit</button>
+    </form>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <script

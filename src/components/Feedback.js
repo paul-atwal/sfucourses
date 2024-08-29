@@ -7,6 +7,7 @@ const Feedback = () => {
         name="feedback"
         method="POST"
         data-netlify="true"
+        netlify-honeypot="bot-field"
       >
         <input type="hidden" name="form-name" value="feedback" />
 
