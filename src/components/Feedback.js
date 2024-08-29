@@ -7,7 +7,7 @@ const Feedback = () => {
         feedback-form"
         name="feedback"
         method="POST"
-        data-netlify="true"
+        netlify
       >
         <textarea
           className="feedback-textarea"

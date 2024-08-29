@@ -1,7 +1,7 @@
 const SummaryCard = (props) => {
   let markerColor;
 
-  if (props.good == "high") {
+  if (props.good === "high") {
     if (props.rating >= 4) {
       markerColor = "#43BE83";
     } else if (props.rating <= 2.8) {
