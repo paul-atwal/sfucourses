@@ -5,7 +5,7 @@ import data from "./data.js";
 import { useState } from "react";
 import SummaryCard from "./components/SummaryCard.js";
 import Feedback from "./components/Feedback";
-import ThankYou from "./components/ThankYou";
+
 import {
   BrowserRouter as Router,
   Route,
@@ -141,7 +141,6 @@ function App() {
           }
         />
         <Route path="/feedback" element={<Feedback />} />
-        <Route path="/thank-you" element={<ThankYou />} />
       </Routes>
     </div>
   );
